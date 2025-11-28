@@ -8,7 +8,10 @@
 </head>
 <body>
 
-   <!-- Navigation -->
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Navigation -->
   <header class="navbar">
     <div class="nav-inner">
       <div class="nav-brand">Shreya Joshi</div>
@@ -16,14 +19,17 @@
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- Mobile menu toggle -->
+        <button class="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="menu-button">☰</button>
       </nav>
     </div>
   </header>
 
-  <!-- Top Section -->
+  <!-- Hero Section -->
   <section class="hero" id="hero">
     <video autoplay muted loop playsinline class="hero-video">
       <source src="image/Videos.mp4" type="video/mp4" />
@@ -63,41 +69,53 @@
     </div>
   </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><span></span> HTML5</div>
+      <div class="skill-card"><span></span> CSS3</div>
+      <div class="skill-card"><span></span> JavaScript</div>
+      <div class="skill-card"><span></span> Python</div>
+      <div class="skill-card"><span></span> Java</div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
   <section id="projects" class="projects">
     <h2>Projects</h2>
-
-    <div class="project-card">
-      <img src="image/project1.png" alt="Portfolio Screenshot" />
-      <div>
-        <h3>Portfolio Website</h3>
-        <p>A clean personal portfolio made using HTML & CSS. Fully responsive and simple.</p>
-        <a href="#" class="project-btn">View Project</a>
+    <div id="projects-grid">
+      <div class="project-card">
+        <img src="image/Project.png" alt="Portfolio Screenshot" />
+        <div class="project-overlay">
+          <h3>Portfolio Website</h3>
+          <p>Responsive portfolio built with HTML & CSS.</p>
+          <a href="#" class="project-btn"> Live Demo</a>
+        </div>
       </div>
-    </div>
 
-    <div class="project-card">
-      <div>
-        <h3>Weather App</h3>
-        <p>Real-time weather app built using API + JavaScript. Shows temperature, humidity, and conditions.</p>
-        <a href="Weather/app-2.html" target="_blank" class="project-btn">View Weather App</a>
+      <div class="project-card">
+        <div class="project-overlay">
+          <h3>Weather App</h3>
+          <p>Real-time weather app using API + JS.</p>
+          <a href="Weather/app-2.html" target="_blank" class="project-btn">Try App</a>
+        </div>
       </div>
-    </div>
 
-    <div class="project-card">
-      <div>
-        <h3>Banking System Project</h3>
-        <p>A Java program simulating simple banking operations. Download and run locally in an IDE.</p>
-        <a href="https://github.com/shreya123511/BankingSystemProject.git" download class="project-btn">
-          Download Java File </a>
+      <div class="project-card">
+        <div class="project-overlay">
+          <h3>Banking System</h3>
+          <p>Java program simulating banking operations.</p>
+          <a href="https://github.com/shreya123511/BankingSystemProject.git" download class="project-btn">Download</a>
+        </div>
       </div>
-    </div>
 
-    <div class="project-card">
-      <div>
-        <h3>Tic-Tac-Toe Game</h3>
-        <p>2-player game built in Python. Run locally or in a Python IDE.</p>
-        <a href="tictactoe/Play.py" download class="project-btn">Download Python Game</a>
+      <div class="project-card">
+        <div class="project-overlay">
+          <h3>Tic-Tac-Toe Game</h3>
+          <p>2-player Python game.</p>
+          <a href="tictactoe/Play.py" download class="project-btn">Play Game</a>
+        </div>
       </div>
     </div>
   </section>
@@ -105,18 +123,21 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <form>
-      <label>Name</label>
-      <input type="text" required />
-      <label>Email</label>
-      <input type="email" required />
-      <label>Message</label>
-      <textarea rows="4" required></textarea>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" required />
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" required></textarea>
       <button type="submit" class="btn-primary">Send Message</button>
     </form>
+    <div id="form-message"></div>
   </section>
 
+  <!-- Audio -->
   <audio id="click-sound" src="image/Audios.mp3" preload="auto" controls></audio>
+
   <!-- Footer -->
   <footer>
     <p><span id="year"></span> Shreya Joshi | Made with Love</p>
