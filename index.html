@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya Joshi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="nav-brand">Shreya Joshi</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Top Section -->
+  <section class="hero" id="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="image/Videos.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-image-wrap">
+        <img src="image/profile.jpg" alt="Shreya Joshi" class="hero-image" />
+      </div>
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Shreya Joshi</span></h1>
+        <p></p> <!-- Typing effect will fill this -->
+        <a href="#projects" class="btn-primary" id="work-button">HIRE ME</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="intro-grid">
+      <div class="intro-image-card">
+        <img src="image/Images.jpg" alt="About Shreya" class="intro-image" />
+      </div>
+      <div class="intro-content">
+        <h2>About Me</h2>
+        <p>
+          I'm a CS student from Kathmandu, learning web development and aiming to become a full-stack developer.
+          I love creating simple UI and improving my skills every day.
+        </p>
+        <p>
+          I focus on building clean, responsive interfaces and keep exploring JavaScript basics, DOM work,
+          and API integration to make projects practical and user-friendly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <img src="image/project1.png" alt="Portfolio Screenshot" />
+      <div>
+        <h3>Portfolio Website</h3>
+        <p>A clean personal portfolio made using HTML & CSS. Fully responsive and simple.</p>
+        <a href="#" class="project-btn">View Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <h3>Weather App</h3>
+        <p>Real-time weather app built using API + JavaScript. Shows temperature, humidity, and conditions.</p>
+        <a href="Weather/app-2.html" target="_blank" class="project-btn">View Weather App</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <h3>Banking System Project</h3>
+        <p>A Java program simulating simple banking operations. Download and run locally in an IDE.</p>
+        <a href="https://github.com/shreya123511/BankingSystemProject.git" download class="project-btn">
+          Download Java File </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div>
+        <h3>Tic-Tac-Toe Game</h3>
+        <p>2-player game built in Python. Run locally or in a Python IDE.</p>
+        <a href="tictactoe/Play.py" download class="project-btn">Download Python Game</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Name</label>
+      <input type="text" required />
+      <label>Email</label>
+      <input type="email" required />
+      <label>Message</label>
+      <textarea rows="4" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <audio id="click-sound" src="image/Audios.mp3" preload="auto" controls></audio>
+  <!-- Footer -->
+  <footer>
+    <p><span id="year"></span> Shreya Joshi | Made with Love</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

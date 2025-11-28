@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="app-1-1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="app-title">
+          <h1>⛅ Simple Weather</h1>
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="citySearch"
+            placeholder="Enter the city name"
+          />
+          <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </header>
+      <main>
+        <div class="current-weather">
+          <h2 id="cityName">Demopolis, AL</h2>
+          <p id="lastUpdate">Updated on sat 22:05 CST</p>
+          <p class="weekdays">Monday</p>
+          <div class="weather-icon">
+            <img
+              src="https://openweathermap.org/img/wn/02d@2x.png"
+              alt="Weather icon"
+            />
+          </div>
+          <div class="temperature">
+            <span id="currentTemp">32°C</span>
+            <p id="weatherDesc">Partly Cloudy</p>
+            <p id="feelsLike">Feels like 56°C</p>
+          </div>
+        </div>
+        <div class="weather-grid">
+          <div class="weather-card">
+            <h3>Pressure</h3>
+            <i class="fa-solid fa-stopwatch"></i>
+            <p id="pressure">30.37 inHg</p>
+          </div>
+          <div class="weather-card">
+            <h3>Humidity</h3>
+            <i class="fa-solid fa-droplet"></i>
+            <p id="humidity">91%</p>
+          </div>
+          <div class="weather-card">
+            <h3>Dew Point</h3>
+            <i class="fa-solid fa-temperature-three-quarters"></i>
+            <p id="dewPoint">29°C</p>
+          </div>
+          <div class="weather-card">
+            <h3>Wind Speed</h3>
+            <i class="fa-solid fa-wind"></i>
+            <p id="windSpeed">5 km/h</p>
+          </div>
+          <div class="weather-card">
+            <h3>Visibility</h3>
+            <i class="fa-solid fa-eye"></i>
+            <p id="visibility">10 km</p>
+          </div>
+          <div class="weather-card">
+            <h3>Cloud Cover</h3>
+            <i class="fa-solid fa-cloud"></i>
+            <p id="cloudCover">20%</p>
+          </div>
+        </div>
+        <div class="sun-times">
+          <div class="sun-card">
+            <h3>Sunrise</h3>
+            <i class="fa-solid fa-sun"></i>
+            <p id="sunrise">6:50 AM</p>
+          </div>
+          <div class="sun-card">
+            <h3>Sunset</h3>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p id="sunset">4:51 PM</p>
+          </div>
+        </div>
+        <div id="error-message" style="color: red"></div>
+      </main>
+      <section class="hourly-forecast">
+        <h2>24 Hour Forecast</h2>
+        <div class="hourly-grid" id="hourlyForecast">
+          <!-- Hourly forecast cards will be generated here -->
+        </div>
+      </section>
+    </div>
+    <script src="app-1.js"></script>
+  </body>
+</html>

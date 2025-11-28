@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 70%;
+    padding: 20px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #34495e, #5d6d7e);
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.app-title {
+    margin: 15px;
+    font-style: italic;
+    text-align: center;
+    font-size: 24px;
+    color: #f39c12;
+}
+
+.weather-icon {
+    width: 20%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f39c12;
+    font-style: italic;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #babecc;
+}
+
+.search-bar button:hover {
+    background-color: #e67e22;
+    border: none;
+}
+
+.current-weather {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.current-weather h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #f39c12;
+}
+
+#lastUpdate {
+    color: #bdc3c7;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.temperature p {
+    font-size: 18px;
+    color: #bdc3c7;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.weather-card, .sun-card {
+    background-color: #34495e;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.weather-card h3, .sun-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.weather-card img, .sun-card img {
+    margin: 10px 0;
+}
+
+.sun-times {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.hourly-forecast {
+    margin-top: 30px;
+}
+
+.hourly-forecast h2 {
+    color: #f39c12;
+}
+
+.hourly-grid {
+ 
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px; 
+    background-color: #34495e; 
+    border-radius: 10px; 
+}
+
+.hourly-grid .hourly-card {
+    display: inline-block;
+    margin-right: 35px; 
+    background-color: #405265;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hourly-grid::-webkit-scrollbar {
+    height: 10px;
+}
+
+.hourly-grid::-webkit-scrollbar-thumb {
+    background-color: #b7b9bc; 
+    border-radius: 10px;
+}
